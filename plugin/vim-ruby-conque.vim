@@ -54,7 +54,7 @@ function! RunRubyCurrentFileConque()
 endfunction
 
 function! RunRspecCurrentLineConque()
-  call RunSingleConque(g:ruby_conque_rspec_command . " " . bufname('%') . " -l "  . line('.') . " --color --drb")
+  call RunSingleConque(g:ruby_conque_rspec_command . " " . bufname('%') . ":"  . line('.') . " --color --drb")
 endfunction
 
 function! RunRspecCurrentFileConque()
